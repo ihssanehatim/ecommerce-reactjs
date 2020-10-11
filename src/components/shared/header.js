@@ -8,13 +8,13 @@ const Header = () => {
 
     const {itemCount} = useContext(CartContext);
 
-    return ( 
+    return (
         <header className={styles.header}>
             <Link to='/'>Store</Link>
             <Link to='/about'>About</Link>
-            <Link to='/cart'> <CartIcon/> Cart ({itemCount})</Link>
+            <Link to='/cart' class="snipcart-checkout"> <CartIcon/> Cart (<span class="snipcart-items-count"></span>)</Link>
         </header>
      );
 }
- 
+
 export default Header;

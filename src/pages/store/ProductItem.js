@@ -30,13 +30,16 @@ const ProductItem = ({product}) => {
                 {
                     !isInCart(product) &&
                     <button type="button"
-                    className="btn btn-outline-danger btn-sm"
- data-item-name={product.title}
- data-item-price={product.price}
- data-item-id={product.id}
- data-item-url={"https://laughing-engelbart-f26e40.netlify.app/"}>
-  Add to cart
-</button>
+                    className="snipcart-add-item btn btn-outline-danger btn-sm"
+                    data-item-name={product.title}
+                    data-item-price={product.price}
+                    data-item-min-quantity="0"
+                    data-item-max-quantity={product.Qte}
+                    data-item-id={product.id}
+                    data-item-image={`${process.env.REACT_APP_HOST}${product.image.url}`}
+                    data-item-url="/">
+                        Add to cart
+                    </button>
                 }
 
             </div>
