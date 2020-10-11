@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../contexts/CartContext';
 import { formatNumber } from '../../helpers/utils';
-import { AddToCart } from 'react-snipcart'
 
 const ProductItem = ({product}) => {
 
@@ -30,9 +29,14 @@ const ProductItem = ({product}) => {
 
                 {
                     !isInCart(product) &&
-                    <button
-                    onClick={() =>addProduct(product)}
-                    className="btn btn-primary btn-sm">Add to cart</button>
+                    <button type="button"
+                    className="btn btn-outline-danger btn-sm"
+ data-item-name={product.title}
+ data-item-price={product.price}
+ data-item-id={product.id}
+ data-item-url={"https://laughing-engelbart-f26e40.netlify.app/"+product.title}>
+  Add to cart
+</button>
                 }
 
             </div>
