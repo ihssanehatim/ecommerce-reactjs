@@ -34,7 +34,7 @@ const ProductItem = ({product}) => {
  data-item-name={product.title}
  data-item-price={product.price}
  data-item-id={product.id}
- data-item-url="https://laughing-engelbart-f26e40.netlify.app/">
+ data-item-url={"https://laughing-engelbart-f26e40.netlify.app/"+product.id}>
   Add to cart
 </button>
                 }
