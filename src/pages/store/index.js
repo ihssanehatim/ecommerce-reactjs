@@ -4,9 +4,9 @@ import Layout from '../../components/Layout';
 import ProductsGrid from './ProductsGrid';
 
 const Store = () => {
-    
-    return ( 
-        <Layout title="Store" description="This is the Store page" >
+
+    return (
+        <Layout title="My Store" description="This is the Store page" >
             <div >
                 <div className="text-center mt-5">
                     <h1>Store</h1>
@@ -17,5 +17,5 @@ const Store = () => {
         </Layout>
      );
 }
- 
+
 export default Store;

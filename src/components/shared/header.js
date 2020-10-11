@@ -12,7 +12,10 @@ const Header = () => {
         <header className={styles.header}>
             <Link to='/'>Store</Link>
             <Link to='/about'>About</Link>
-            <Link to='/cart' class="snipcart-checkout"> <CartIcon/> Cart (<span class="snipcart-items-count"></span>)</Link>
+            <Link to='/cart' class="snipcart-checkout"> <CartIcon/> Cart (<span class="snipcart-items-count">0</span>)</Link>
+              <a href="/#/dashboard" class="snipcart-user-profile">
+              <span><img src="https://img.icons8.com/officel/16/000000/guest-male.png"/></span>  Account
+              </a>
         </header>
      );
 }

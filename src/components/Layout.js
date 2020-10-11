@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet-async';
 import 'bootswatch/dist/lux/bootstrap.css'
 
 const Layout = ({title, description, children}) => {
-    return ( 
+    return (
         <>
         <Helmet>
             <title>{ title ? title + " - React Boilerplate" : "React.js Boilerplate" }</title>
@@ -21,5 +21,5 @@ const Layout = ({title, description, children}) => {
         </>
      );
 }
- 
+
 export default Layout;
