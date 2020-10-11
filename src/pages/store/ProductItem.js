@@ -32,13 +32,13 @@ const ProductItem = ({product}) => {
                     <button type="button"
                     className="snipcart-add-item btn btn-outline-danger btn-sm"
                     data-item-name={product.title}
-                    data-item-price="22.23"
+                    data-item-price={product.price}
                     data-item-description={product.description}
                     data-item-min-quantity="0"
                     data-item-max-quantity={product.Qte}
                     data-item-id={product.id}
                     data-item-image={`${process.env.REACT_APP_HOST}${product.image.url}`}
-                    data-item-url="/">
+                    data-item-url={"/products/"+product.id}>
                         Add to cart
                     </button>
                 }
