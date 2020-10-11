@@ -33,6 +33,7 @@ const ProductItem = ({product}) => {
                     className="snipcart-add-item btn btn-outline-danger btn-sm"
                     data-item-name={product.title}
                     data-item-price={product.price}
+                    data-item-description={product.description}
                     data-item-min-quantity="0"
                     data-item-max-quantity={product.Qte}
                     data-item-id={product.id}
