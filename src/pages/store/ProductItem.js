@@ -38,7 +38,7 @@ const ProductItem = ({product}) => {
                     data-item-max-quantity={product.Qte}
                     data-item-id={product.id}
                     data-item-image={`${process.env.REACT_APP_HOST}${product.image.url}`}
-                    data-item-url={"/products/"+product.id}>
+                    data-item-url="/">
                         Add to cart
                     </button>
                 }
