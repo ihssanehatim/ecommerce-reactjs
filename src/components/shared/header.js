@@ -16,6 +16,7 @@ const Header = () => {
               <a href="/#/dashboard" class="snipcart-user-profile">
               <span><img src="https://img.icons8.com/officel/16/000000/guest-male.png"/></span>  Account
               </a>
+              
         </header>
      );
 }
