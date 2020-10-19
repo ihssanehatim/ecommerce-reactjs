@@ -32,7 +32,7 @@ const ProductItem = ({product}) => {
                     <button type="button"
                     className="snipcart-add-item"
                     data-item-name={product.title}
-                    data-item-price={product.price}
+                    data-item-price={product.price.toFixed(2)}
                     data-item-description={product.description}
                     data-item-min-quantity="0"
                     data-item-max-quantity={product.Qte}
