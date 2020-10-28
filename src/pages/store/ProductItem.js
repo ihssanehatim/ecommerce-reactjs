@@ -30,7 +30,7 @@ const ProductItem = ({product}) => {
                 {
                     !isInCart(product) &&
                     <button type="button"
-                    className="snipcart-add-item"
+                    className="snipcart-add-item btn btn-outline-danger btn-sm"
                     data-item-name={product.title}
                     data-item-price={product.price.toFixed(2)}
                     data-item-description={product.description}
